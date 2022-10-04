@@ -1,21 +1,103 @@
 .container {
-  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  height: 100%;
+  width: 100%;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  height: 85%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.nav {
+  min-height: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 3px #efefef;
+  z-index: 1;
+}
+
+.left {
+  height: 100%;
+  min-width: 420px;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-right: 1px solid #ffc524
+}
+
+.centerWrap {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-width: 50%;
+  background-color: #ffffff;
+}
+
+.message {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 50%;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.chatroomTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.announcement {
+  background-color: #ffaa9c;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.lastPay {
+    background-color: #ffaa9c;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 0 0.5rem 0;
+}
+
+.inputWrap {
+  min-height: 45px;
+  border-top: 1px solid #ffc524;
+}
+
+.inputMsg {
+  height: 30px;
+}
+
+.right {
+  height: 100%;
+  width: auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-left: 1px solid #ffc524
+}
+
 .footer {
+  min-height: 45px;
   display: flex;
   flex: 1;
-  padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
